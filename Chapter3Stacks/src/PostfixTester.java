@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Purpose: Show use of Stacks to evaluate postfix expressions (1 1 +) 
+
 
 public class PostfixTester {
 	
@@ -10,7 +12,9 @@ public class PostfixTester {
 		
 		Scanner in = new Scanner(System.in);
 		
-		do {
+		
+		do 
+		{
 			
 			PostfixEvaluator evaluator = new PostfixEvaluator();
 			System.out.println("Enter a valid post-fix expression one token" + " at a time with a space "
@@ -27,8 +31,8 @@ public class PostfixTester {
 			System.out.println();
 			
 		}
-		
 		while (again.equalsIgnoreCase("y"));
+		in.close();
 		
 		
 	}
