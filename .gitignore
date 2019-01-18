@@ -1,0 +1,4 @@
+*.class
+.medata/
+.recommenders/
+RemoteSystemsTempFiles/
