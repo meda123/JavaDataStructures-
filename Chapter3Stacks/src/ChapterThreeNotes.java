@@ -56,8 +56,9 @@ public class ChapterThreeNotes{
 	 4. There is an integer variable top that stores the index of the array immediately following the top element in the stack 
 	 
 	 
-	 // WEDNESDAY: WRite out ArrayStack in it's own class :) 
-	  
+	 // 
+	  * 
+	  See class 
 	  
 	 
 	 
@@ -66,9 +67,6 @@ public class ChapterThreeNotes{
 	
 	
 	// REVIEW QUESTIONS 
-	
-	
-	
 	
 	
 	

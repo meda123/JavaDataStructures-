@@ -1,5 +1,6 @@
-import java.util.Arrays;
+package stacksWithArray;
 
+import java.util.Arrays;
 
 public class ArrayStack <T> implements StackADT <T> {
 	
@@ -29,22 +30,45 @@ public void push (T element) {
 	top++;
 }
 
+public int size() {
+	int result = 0;
+	return result; 
+	
+	
+	
+}
+
+
 public void expandCapacity() {
 	stack = Arrays.copyOf(stack, stack.length * 2);
 }
 
-public T pop() throws EmptyCollectionsException {
+public T pop() throws EmptyCollectionException {
 	
 	if (isEmpty())
-		throws new EmptyCollectionsException("stack");
+		throw new EmptyCollectionException("stack");
+	
+	top--;
+	T result = stack[top];
+	stack[top] = null; 
+	
+	return result; 
 	
 	
 }
 
-
-
+public T peek() throws EmptyCollectionException {
+	
+	if(isEmpty())
+		throw new EmptyCollectionException("stack");
+	
+	return stack[top-1];
+}
 
 }
+
+
+
 
 
 

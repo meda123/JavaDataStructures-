@@ -1,3 +1,4 @@
+package stacksWithArray;
 
 public interface StackADT<T> {
 	
@@ -7,12 +8,6 @@ public interface StackADT<T> {
 	
 	public T peak();
 	
-	public boolean isEmpty();
-	
-	public int size();
-	
-	public String toString();
-	
-	
 }
+
 
