@@ -57,27 +57,15 @@ public class Notes {
 	 4. There is an integer variable top that stores the index of the array immediately following the top element in the stack 
 	 
 	 
-	 // 
-	  * 
-	  See class 
-	  
-	 
-	 
-	 */
-
 	
 	
 	// REVIEW QUESTIONS 
 	
 	
 	
-	
-	// REVIEW EXERCISES 
-	
-	
-
 
 	
 
-	
+
+*/
 }

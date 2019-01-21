@@ -5,26 +5,23 @@ public class RunArrayStack {
 		
 		ArrayStack nums = new ArrayStack(); 
 		nums.push(15);
-
 		nums.push(8);
-		
 		nums.push(23);
+		nums.push(36);
 		
-		System.out.println("Test");
-		System.out.println(nums.peek());
-		System.out.println("Test");
-
-		nums.push(10);
 		
+		System.out.print("Original stack: ");
 		nums.show();
 		
 		System.out.printf("%n");
-		System.out.println("----");
+		System.out.println("Peek operation " + nums.peek());
 		
-		nums.pop();
+		System.out.printf("%n");
+		System.out.println("Pop operation " + nums.pop());
 		
+		System.out.print("Stack after pop operation: ");
 		nums.show();
-		
+			
 		}
 
 }
