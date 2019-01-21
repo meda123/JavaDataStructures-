@@ -1,10 +1,2 @@
 *.class
 .*
-*.classpath
-*.project
-settings/
-bin/
-metadata/
-.recommenders/
-RemoteSystemsTempFiles/
-/.metadata/
