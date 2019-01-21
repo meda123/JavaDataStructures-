@@ -1,2 +1,0 @@
-INDEX VERSION 1.130+/Users/medalis/src/JavaDataStructures/.metadata/.plugins/org.eclipse.jdt.core
-2679821907.index
