@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 // Purpose: Show use of Stacks to evaluate postfix expressions (1 1 +) 
 
+/*
 
 public class PostfixTester {
 	
@@ -38,3 +39,5 @@ public class PostfixTester {
 	}
 
 }
+
+*/

@@ -1,71 +1,55 @@
 package stacksWithArray;
 
-import java.util.Arrays;
-
-public class ArrayStack <T> implements StackADT <T> {
-	
-	private final static int DEFAULT_CAPACITY = 100;
-	
-	private int top;
-	private T[] stack;
-	
-
-
-public ArrayStack() {
-	this (DEFAULT_CAPACITY);
-}
-
-public ArrayStack (int initialCapacity) {
-	top = 0;
-	stack = (T[]) (new Object [initialCapacity]);
-}
-
-
-public void push (T element) {
-	
-	if (size() == stack.length)
-		expandCapacity();
-	
-	stack[top] = element;
-	top++;
-}
-
-public int size() {
-	int result = 0;
-	return result; 
+public class ArrayStack 
+{
+	int stack[ ] = new int[5];
+	int top = 0;
 	
 	
+	// Inserts given integer to the stack 
+	public void push (int data )
+	{
+		stack[top] = data; 
+		top++;
+	}
 	
-}
-
-
-public void expandCapacity() {
-	stack = Arrays.copyOf(stack, stack.length * 2);
-}
-
-public T pop() throws EmptyCollectionException {
 	
-	if (isEmpty())
-		throw new EmptyCollectionException("stack");
+	// Removed the top item from the stack
+	public int pop()
+	{
+		int data;
+		top --;
+		data = stack[top];
+		stack[top]=0;
+		return data;
+	}
 	
-	top--;
-	T result = stack[top];
-	stack[top] = null; 
 	
-	return result; 
+	// Returns the value of the top of the stack w/o removing top element
+	public int peek() 
+	{
+		int data; 
+		data = stack[top-1];
+		return data;
+	}
 	
+	// Prints the stack
+	public void show() 
+	{
+		for (int n: stack) 
+		{
+			System.out.print(n + " ") ;
+		}
+	}
 	
 }
-
-public T peek() throws EmptyCollectionException {
 	
-	if(isEmpty())
-		throw new EmptyCollectionException("stack");
 	
-	return stack[top-1];
-}
+	
 
-}
+
+
+
 
 
 
