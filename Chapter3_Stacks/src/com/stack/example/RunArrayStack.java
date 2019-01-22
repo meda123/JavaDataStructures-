@@ -5,9 +5,8 @@ public class RunArrayStack {
 		
 		ArrayStack nums = new ArrayStack(); 
 		nums.push(15);
-		nums.push(8);
-		nums.push(23);
-		nums.push(36);
+		nums.push(12);
+		nums.push(13);
 		
 		
 		System.out.print("Original stack: ");
@@ -21,7 +20,13 @@ public class RunArrayStack {
 		
 		System.out.print("Stack after pop operation: ");
 		nums.show();
-			
+		
+		System.out.printf("%n");
+		System.out.println("Stack size is " + nums.size());
+		
+		System.out.printf("%n");
+		System.out.println("Is stack empty " + nums.isEmpty());
+		
 		}
 
 }

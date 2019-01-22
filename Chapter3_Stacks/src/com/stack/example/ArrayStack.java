@@ -2,25 +2,44 @@ package com.stack.example;
 
 public class ArrayStack {
 	
+	// size of the stack 
 	int stack[ ] = new int[5];
+	// captures the first element of the stack
 	int top = 0;
 	
 	
 	// Inserts given integer to the stack 
 	public void push (int data )
 	{
-		stack[top] = data; 
-		top++;
+		if (top==5)
+		{
+			System.out.println("Stack is full");
+		}
+		else 
+		{
+			stack[top] = data; 
+			top++;	
+		}
+		
 	}
 	
 	
 	// Removed the top item from the stack
 	public int pop()
 	{
-		int data;
-		top --;
-		data = stack[top];
-		stack[top]=0;
+		int data =0;
+		
+		if (isEmpty()) 
+		{
+			System.out.println("Stack is empty");
+		}
+		
+		else
+		{
+			top --;
+			data = stack[top];
+			stack[top]=0;
+		}
 		return data;
 	}
 	
@@ -33,6 +52,19 @@ public class ArrayStack {
 		return data;
 	}
 	
+	// Returns size of the stack 
+	public int size() 
+	{
+		return top;
+	}
+	
+	
+	// Checks if the stack is empty  
+	public boolean isEmpty() 
+	{
+		return top <=0;
+	}
+
 	// Prints the stack
 	public void show() 
 	{
