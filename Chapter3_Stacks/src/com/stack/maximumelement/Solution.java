@@ -10,6 +10,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+@SuppressWarnings("unused")
 public class Solution {
 
     public static void main(String[] args) {
