@@ -4,7 +4,7 @@ public class ArrayStack {
 	
 	// size of the stack 
 	int stack[ ] = new int[5];
-	// captures the first element of the stack
+	// captures the number of items in the stack
 	int top = 0;
 	
 	
@@ -36,7 +36,9 @@ public class ArrayStack {
 		
 		else
 		{
+			System.out.println("Before pop, top is " + top);
 			top --;
+			System.out.println("After pop, top is " + top);
 			data = stack[top];
 			stack[top]=0;
 		}
@@ -56,6 +58,7 @@ public class ArrayStack {
 	public int size() 
 	{
 		return top;
+		
 	}
 	
 	
