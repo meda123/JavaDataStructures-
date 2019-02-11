@@ -24,6 +24,7 @@ public class Solution {
 				String last = S.substring(S.length() - k);
 				S.delete(S.length() - k, S.length());
 
+			==
 				operations.push(new Operation(type, last));
 			} else if (type == 3) {
 				int k = sc.nextInt();
